@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.hero {
+  background: url('https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260') no-repeat center/cover;
+  color: white;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.service-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 250px;
+  text-align: center;
+}
+
+.service-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.service-card h3 {
+  padding: 1rem;
+}
+
+.calendar-booking {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: #fff;
+  margin: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.calendar-booking select,
+.calendar-booking input {
+  display: block;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 90%;
+  max-width: 300px;
+}
+
+.calendar-booking button {
+  padding: 0.5rem 2rem;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.calendar-booking button:hover {
+  background: #555;
+}
+
+#confirmation {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+.next-slots {
+  margin-top: 1rem;
+}
+
+.next-slots span {
+  display: inline-block;
+  background: #eee;
+  padding: 0.3rem 0.8rem;
+  margin: 0.2rem;
+  border-radius: 5px;
+}
+
+/* Color codes by service */
+.web-design { background: #d0ebff; }
+.branding { background: #d2f8d2; }
+.ui-ux { background: #fff3cd; }
+
+.next-slots span.web-design { background: #d0ebff; }
+.next-slots span.branding { background: #d2f8d2; }
+.next-slots span.ui-ux { background: #fff3cd; }
+
+.upcoming {
+  padding: 2rem;
+  text-align: center;
+}
+
+.upcoming ul {
+  list-style: none;
+  padding: 0;
+}
+
+.upcoming li {
+  background: #fff;
+  margin: 0.5rem auto;
+  padding: 0.8rem;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #333;
+  color: white;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+}

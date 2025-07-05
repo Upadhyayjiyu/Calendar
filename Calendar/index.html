@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Design Services Booking Calendar</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header class="hero">
+    <h1>Book Your Design Consultation</h1>
+    <p>Pick a service, date & time to get started with your creative journey</p>
+  </header>
+
+  <section class="services">
+    <div class="service-card">
+      <img src="https://images.pexels.com/photos/6476587/pexels-photo-6476587.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Web Design">
+      <h3>Web Design</h3>
+    </div>
+    <div class="service-card">
+      <img src="https://images.pexels.com/photos/9653450/pexels-photo-9653450.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Branding">
+      <h3>Branding</h3>
+    </div>
+    <div class="service-card">
+      <img src="https://images.pexels.com/photos/6476808/pexels-photo-6476808.jpeg?auto=compress&cs=tinysrgb&w=800" alt="UI/UX">
+      <h3>UI/UX</h3>
+    </div>
+  </section>
+
+  <section class="calendar-booking">
+    <h2>Book Your Appointment</h2>
+    <select id="service-select">
+      <option value="">Select Service</option>
+      <option value="Web Design">Web Design</option>
+      <option value="Branding">Branding</option>
+      <option value="UI/UX">UI/UX</option>
+    </select>
+    <input type="date" id="date-picker">
+    <input type="time" id="time-picker">
+    <button onclick="bookAppointment()">Book Now</button>
+    <p id="confirmation"></p>
+
+    <div class="next-slots" id="next-slots"></div>
+  </section>
+
+  <section class="upcoming">
+    <h2>Upcoming Appointments</h2>
+    <ul id="appointments-list">
+      <li class="web-design">July 8 - 10:00 AM (Web Design)</li>
+      <li class="branding">July 10 - 2:00 PM (Branding)</li>
+      <li class="ui-ux">July 12 - 11:30 AM (UI/UX)</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Creative Studio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
